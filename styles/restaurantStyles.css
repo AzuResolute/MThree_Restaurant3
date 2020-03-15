@@ -1,5 +1,5 @@
-h2 {
-  color: red;
+* {
+  font-family: Trebuchet MS, Helvetica, sans-serif
 }
 
 .company-name,
@@ -9,26 +9,7 @@ header {
   color: azure;
 }
 
-.company-name {
-  justify-self: baseline;
-}
 
-.company-name-container {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-.form-container {
-  background-color: azure;
-  padding: 20px 20px;
-}
-
-.announcement {
-  max-height: 400px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
 
 body {
   display: flex;
@@ -43,6 +24,20 @@ body {
 nav {
   display: flex;
   justify-content: flex-start;
+}
+
+nav button :visited {
+  color: violet;
+}
+
+.btn :hover {
+  font-weight: bold;
+  font-size: large;
+}
+
+.btn  {
+  margin: 0 1rem;
+  /* padding: 0; */
 }
 
 header,
@@ -61,6 +56,44 @@ header {
 footer {
   justify-content: center;
   flex-direction: column;
+}
+
+.company-name {
+  justify-self: baseline;
+}
+
+.company-name-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: 'Bellota', cursive;
+}
+
+.home-component {
+  width: 400px;
+  background-color: azure;
+  text-align: center;
+}
+
+.announcement {
+  max-height: 400px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-text{
+    font-size: small;
+  }
+}
+
+.form-container {
+  background-color: azure;
+  padding: 20px 20px;
+}
+
+.form-submit {
+  width: 100%;
 }
 
 .flip-card {
