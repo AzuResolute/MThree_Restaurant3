@@ -7,6 +7,16 @@ h2{
     color: white
 }
 
+.company-name {
+    justify-self: baseline;
+}
+
+.company-name-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -16,14 +26,19 @@ body {
 
 header, footer {
     width: 100%;
-    min-height: 100px;
+    min-height: 64px;
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+header {
+    justify-content: flex-start;
 }
 
 footer {
     justify-content: center;
+    flex-direction: column;
 }
 
 nav {
