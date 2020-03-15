@@ -25,10 +25,13 @@ const Send = e => {
     if(IsValid()){
         alert("Input Validated and Received. Thanks!");
     }
-}
+};
+
+const Refresh = e => location.reload();
 
 try {
     document.getElementById("contact").addEventListener("submit", Send);
+    document.getElementById("refresh").addEventListener("click", Refresh);
 } catch (error) {
-    console.log(error)
+    console.log(error);
 }
