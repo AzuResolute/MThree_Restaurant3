@@ -11,7 +11,6 @@
         <title>Desperato Cupiditas - Menu</title>
     </head>
     <body class="home-body">
-    <!-- this can be replicated -->
         <header>
             <nav class="nav">
                 <button type="button" class="btn btn-outline-dark">
@@ -29,103 +28,197 @@
             </div>
         </header>
         <main>
-            <section class="container text-center pt-3">
-                <div class="row menu">
-                    <article class="col-lg-4 col-md-6 flip-card">
-                        <div class="flip-card-inner card">
-                            <div class="flip-card-front card-body">
-                                <h5 class="card-title">Burger and Fries</h5>
-                                <div class="card-text">An American Classic!</div>
-                                <div class="card-text">with our without cheese</div>
-                                <div class="card-text">Pickle, onion, tomato, and lettuce</div>
-                                <div class="card-text">Served with our famous thick-cut fries</div>
-                                <div class="card-subtitle muted">$7.95</div>
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Main Announcements
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="announcements" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#announcements" data-slide-to="0" class="active"></li>
+                          <li data-target="#announcements" data-slide-to="1"></li>
+                          <li data-target="#announcements" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item announcement active">
+                                <img src="../public/announcement/pinoy_generic_restaurant.jpg" class="announcement" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h3>New Location in Boracay, Philippines</h3>
+                                  <p>Check out our new location at an exotic paradise in the Far East</p>
+                                </div>
                             </div>
-                            <div class="flip-card-back card-body"
-                                style="background-image: url(../public/menu/burger-and-fries.jpg);">
+                            <div class="carousel-item announcement">
+                                <img src="../public/announcement/tsg-special-brew.jpg" class="announcement" alt="...">
+                                <div class="carousel-caption d-none d-md-block" >
+                                  <h3>The Drink of the Month: TSG Special Brew.</h3>
+                                  <p>Quench your thirst with our special draught. NYTimes called it "The Elixer of Life".</p>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="col-lg-4 col-md-6 flip-card">
-                        <div class="flip-card-inner card">
-                            <div class="flip-card-front card-body">
-                                <h5 class="card-title">Hot Dog and Chips</h5>
-                                <div class="card-text">A Summer Classic!</div>
-                                <div class="card-text">with white or wheat bun</div>
-                                <div class="card-text">Relish, mustard, and ketchup</div>
-                                <div class="card-text">Served with our house-made chips</div>
-                                <div class="card-subtitle muted">$7.95</div>
-                            </div>
-                            <div class="flip-card-back card-body"
-                                style="background-image: url(../public/menu/hot-dog-and-chips.jpg);">
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-lg-4 col-md-6 flip-card">
-                        <div class="flip-card-inner card">
-                            <div class="flip-card-front card-body">
-                                <h5 class="card-title">Italian Sausage and Peppers</h5>
-                                <div class="card-text">An All-time Classic!</div>
-                                <div class="card-text">with mild or spicy Cole Slaw</div>
-                                <div class="card-text">Served with garlic mashers</div>
-                                <div class="card-subtitle muted">$10.95</div>
-                            </div>
-                            <div class="flip-card-back card-body"
-                                style="background-image: url(../public/menu/italian-sausage-and-peppers.jpg);">
+                            <div class="carousel-item announcement">
+                                <img src="../public/announcement/seafood-special.jpg" class="announcement" alt="...">
+                                <div class="carousel-caption d-none d-md-block" >
+                                  <h3>Seasonal Seafood Menu</h3>
+                                  <p>Including our seasonal favorite, crab roll!</p>
+                                </div>
                             </div>
                         </div>
-                    </article>
-                    <article class="col-lg-4 col-md-6 flip-card">
-                        <div class="flip-card-inner card">
-                            <div class="flip-card-front card-body">
-                                <h5 class="card-title">Tenderloin Sandwich and Chips</h5>
-                                <div class="card-text">Really Hits the Spot!</div>
-                                <div class="card-text">with Plain or Sesame Seed Bun</div>
-                                <div class="card-text">Pickle, onion, tomato, and lettuce</div>
-                                <div class="card-text">Served with our house-made chips</div>
-                                <div class="card-subtitle muted">$8.95</div>
-                            </div>
-                            <div class="flip-card-back card-body"
-                                style="background-image: url(../public/menu/tenderloin-sandwich-and-chips.jpg); background-position: center;">
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-lg-4 col-md-6 flip-card">
-                        <div class="flip-card-inner card">
-                            <div class="flip-card-front card-body">
-                                <h5 class="card-title">House Salad</h5>
-                                <div class="card-text">On the lighter side</div>
-                                <div class="card-text">with or without cheese</div>
-                                <div class="card-text">Iceberg lettuce, tomatoes, peppers</div>
-                                <div class="card-text">Thousand Island or Ranch Dressing</div>
-                                <div class="card-text">Served with a dinner roll</div>
-                                <div class="card-subtitle muted">$6.95</div>
-                            </div>
-                            <div class="flip-card-back card-body"
-                                style="background-image: url(../public/menu/house-salad.jpg); background-position: center;">
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-lg-4 col-md-6 flip-card">
-                        <div class="flip-card-inner card">
-                            <div class="flip-card-front card-body">
-                                <h5 class="card-title">Brisket Sandwich and Fries</h5>
-                                <div class="card-text">A Taste of Texas</div>
-                                <div class="card-text">Smoked Brisket on Texas Toast</div>
-                                <div class="card-text">Cole Slaw</div>
-                                <div class="card-text"></div>
-                                <div class="card-text">Served with our famous french fries</div>
-                                <div class="card-subtitle muted">$7.95</div>
-                            </div>
-                            <div class="flip-card-back card-body"
-                                style="background-image: url(../public/menu/brisket-sandwich-and-fries.jpg); background-position: center;">
-                            </div>
-                        </div>
-                    </article>
+                        <a class="carousel-control-prev" href="#announcements" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#announcements" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                  </div>
                 </div>
-            </section>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Menu
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <section class="container text-center pt-3">
+                        <div class="row menu">
+                            <article class="col-lg-4 col-md-6 flip-card">
+                                <div class="flip-card-inner card">
+                                    <div class="flip-card-front card-body">
+                                        <h5 class="card-title">Burger and Fries</h5>
+                                        <div class="card-text">An American Classic!</div>
+                                        <div class="card-text">with our without cheese</div>
+                                        <div class="card-text">Pickle, onion, tomato, and lettuce</div>
+                                        <div class="card-text">Served with our famous thick-cut fries</div>
+                                        <div class="card-subtitle muted">$7.95</div>
+                                    </div>
+                                    <div class="flip-card-back card-body"
+                                        style="background-image: url(../public/menu/burger-and-fries.jpg);">
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-lg-4 col-md-6 flip-card">
+                                <div class="flip-card-inner card">
+                                    <div class="flip-card-front card-body">
+                                        <h5 class="card-title">Hot Dog and Chips</h5>
+                                        <div class="card-text">A Summer Classic!</div>
+                                        <div class="card-text">with white or wheat bun</div>
+                                        <div class="card-text">Relish, mustard, and ketchup</div>
+                                        <div class="card-text">Served with our house-made chips</div>
+                                        <div class="card-subtitle muted">$7.95</div>
+                                    </div>
+                                    <div class="flip-card-back card-body"
+                                        style="background-image: url(../public/menu/hot-dog-and-chips.jpg);">
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-lg-4 col-md-6 flip-card">
+                                <div class="flip-card-inner card">
+                                    <div class="flip-card-front card-body">
+                                        <h5 class="card-title">Italian Sausage and Peppers</h5>
+                                        <div class="card-text">An All-time Classic!</div>
+                                        <div class="card-text">with mild or spicy Cole Slaw</div>
+                                        <div class="card-text">Served with garlic mashers</div>
+                                        <div class="card-subtitle muted">$10.95</div>
+                                    </div>
+                                    <div class="flip-card-back card-body"
+                                        style="background-image: url(../public/menu/italian-sausage-and-peppers.jpg);">
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-lg-4 col-md-6 flip-card">
+                                <div class="flip-card-inner card">
+                                    <div class="flip-card-front card-body">
+                                        <h5 class="card-title">Tenderloin Sandwich and Chips</h5>
+                                        <div class="card-text">Really Hits the Spot!</div>
+                                        <div class="card-text">with Plain or Sesame Seed Bun</div>
+                                        <div class="card-text">Pickle, onion, tomato, and lettuce</div>
+                                        <div class="card-text">Served with our house-made chips</div>
+                                        <div class="card-subtitle muted">$8.95</div>
+                                    </div>
+                                    <div class="flip-card-back card-body"
+                                        style="background-image: url(../public/menu/tenderloin-sandwich-and-chips.jpg); background-position: center;">
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-lg-4 col-md-6 flip-card">
+                                <div class="flip-card-inner card">
+                                    <div class="flip-card-front card-body">
+                                        <h5 class="card-title">House Salad</h5>
+                                        <div class="card-text">On the lighter side</div>
+                                        <div class="card-text">with or without cheese</div>
+                                        <div class="card-text">Iceberg lettuce, tomatoes, peppers</div>
+                                        <div class="card-text">Thousand Island or Ranch Dressing</div>
+                                        <div class="card-text">Served with a dinner roll</div>
+                                        <div class="card-subtitle muted">$6.95</div>
+                                    </div>
+                                    <div class="flip-card-back card-body"
+                                        style="background-image: url(../public/menu/house-salad.jpg); background-position: center;">
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-lg-4 col-md-6 flip-card">
+                                <div class="flip-card-inner card">
+                                    <div class="flip-card-front card-body">
+                                        <h5 class="card-title">Brisket Sandwich and Fries</h5>
+                                        <div class="card-text">A Taste of Texas</div>
+                                        <div class="card-text">Smoked Brisket on Texas Toast</div>
+                                        <div class="card-text">Cole Slaw</div>
+                                        <div class="card-text"></div>
+                                        <div class="card-text">Served with our famous french fries</div>
+                                        <div class="card-subtitle muted">$7.95</div>
+                                    </div>
+                                    <div class="flip-card-back card-body"
+                                        style="background-image: url(../public/menu/brisket-sandwich-and-fries.jpg); background-position: center;">
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Drinks
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <table class="blueTable">
+                        <tr>
+                            <th colspan="2" class="text-center">Beverages</th>
+                        </tr>
+                            <tr class>
+                                <td>Root Beer</td>
+                                <td>$3.00</td>
+                            </tr>
+                            <tr>
+                                <td>Bottled Water</td>
+                                <td>$1.25</td>
+                            </tr>
+                            <tr>
+                                <td>Lemonade</td>
+                                <td>$1.00</td>
+                            </tr>
+                            <tr>
+                                <td>Iced Tea</td>
+                                <td>$1.25</td>
+                            </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
         </main>
-        <!-- this can be replicated -->
         <footer>
             <div>321 Dream Street, Astoria, NY 11101</div>
             <div>1-(987)-654-321</div>

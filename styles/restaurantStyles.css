@@ -17,6 +17,11 @@ h2{
     flex-grow: 1;
 }
 
+.announcement {
+  max-height: 400px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -47,7 +52,7 @@ nav {
 }
 
 .home-body {
-    background-image: url("../public/home/crab-roll.jpg");
+    background-image: url("../public/announcement/crab-roll.jpg");
     background-size: cover;
 }
 
@@ -99,4 +104,23 @@ body {
     background-size: cover;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  table.blueTable {
+    border: 1px solid #1c6ea4;
+    background-color: #eeeeee;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.blueTable td,
+  table.blueTable th {
+    border: 1px solid #aaaaaa;
+    padding: 3px 2px;
+  }
+  table.blueTable tbody td {
+    font-size: 13px;
+  }
+  table.blueTable tr:nth-child(even) {
+    background: #d0e4f5;
   }
